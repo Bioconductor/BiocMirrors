@@ -1,0 +1,16 @@
+Package: BiocMirrors
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: person(
+    "Marcel", "Ramos", , "marcel.ramosperez@roswellpark.org", c("aut", "cre"),
+    c(ORCID = "0000-0002-3242-0582"))
+Description: What the package does (one paragraph).
+Imports:
+  BiocManager,
+  httr,
+  RCurl,
+  utils
+License: Artistic-2.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
