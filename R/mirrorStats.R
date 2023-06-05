@@ -66,16 +66,16 @@ mirrorStats <- function(
     repoType =
         c("BioCsoft", "BioCann", "BioCexp", "BioCworkflows", "BioCbooks")
 ) {
-    repo_type <- match.arg(repoType)
+    repoType <- match.arg(repoType)
     repoDir <- repo_short_names[
-        repo_short_names[["repo.name"]] == repo_type, "url.name"
+        repo_short_names[["repo.name"]] == repoType, "url.name"
     ]
     if (is.null(mirror)) {
         utils::chooseBioCmirror()
         mirror <- getOption("BioC_mirror")
     }
     bioc_repository <- suppressMessages({
-        BiocManager::repositories()[[repo_type]]
+        BiocManager::repositories()[[repoType]]
     })
     db_bioc <- available.packages(repos = bioc_repository)
     if (length(mirror)) {

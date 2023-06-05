@@ -38,9 +38,9 @@ checkBioCmirror <- function(
         utils::chooseBioCmirror()
         mirror <- getOption("BioC_mirror")
     }
-    repo_type <- match.arg(repoType)
+    repoType <- match.arg(repoType)
     path <- repo_short_names[
-        repo_short_names[["repo.name"]] == repo_type, "url.name"
+        repo_short_names[["repo.name"]] == repoType, "url.name"
     ]
     bioc_repo <-
         paste(mirror, "packages", as.character(version), path, sep = "/")
