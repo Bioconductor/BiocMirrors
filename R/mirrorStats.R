@@ -142,7 +142,7 @@ print.mirrorStats <-
     )
     cat(
         "Bioconductor version: ", as.character(x$bioconductor_version), "\n",
-        "Bioconductor mirror repos:", bioconductor_mirror, "\n",
+        "Bioconductor mirror:", bioconductor_mirror, "\n",
         "PACKAGES timestamp: ", x$PACKAGES_mtime, "\n",
         "Query timestamp: ", x$query_timestamp, "\n",
         "Bioconductor software packages: ", x$n_software_packages, "\n",
