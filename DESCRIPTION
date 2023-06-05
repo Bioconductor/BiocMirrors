@@ -1,10 +1,14 @@
 Package: BiocMirrors
-Title: What the Package Does (One Line, Title Case)
+Title: Utilities for checking Bioconductor mirror health
 Version: 0.0.1
-Authors@R: person(
-    "Marcel", "Ramos", , "marcel.ramosperez@roswellpark.org", c("aut", "cre"),
-    c(ORCID = "0000-0002-3242-0582"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+    person("Marcel", "Ramos", , "marcel.ramosperez@roswellpark.org",
+    c("aut", "cre"), c(ORCID = "0000-0002-3242-0582")),
+    person("Martin", "Morgan", , "martin.morgan@roswellpark.org", "aut")
+    )
+Description: Provides utilties for checking the health and recency of mirror
+  repositories. It checks package versions in the mirror against the canonical
+  Bioconductor versions.
 Imports:
   BiocManager,
   httr,
